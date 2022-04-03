@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Registro</title>
+	<link rel= "icon" href= "/images/favicon.ico">
+	<script src= "/js/utils/include.js"> </script> <!-- Para hacer includes de código HTML en esta página -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href= "/css/bootstrap.min.css">
+	<link rel="stylesheet " href= "/css/font-awesome.min.css">
+	<script src="/js/libs/jquery-3.4.1.min.js"> </script>
+	<script src="/js/libs/popper.min.js"> </script>
+	<script src="/js/libs/bootstrap.min.js"> </script>
+	<script src= "js/libs/axios.min.js"></script> <!-- Librería Axios para peticiones Ajax a la API Rest -->
+
+</head>
+<body>
+	<div id="page-header"></div> <!-- Incrustar aquí cabecera común header.html con JavaScript -->
+	<script>include ("header.html", "#page-header");</script>
+	<div class="container">
+        <h1 class="col-md text-left"><i class="fa fa-users" aria-hidden="true"></i><p style="text-align:center">¿Cómo registrarse?</p></h1>
+		<p class="col-md text left">¡Muy secillo! Tan solo tiene que rellenar los siguientes datos: </p>
+        <div class= "row">
+            <div id="errors" class="form-group col-md"></div>
+        </div>
+		<fieldset>
+			<legend><b>Datos de la página</b></legend>
+			<div class= "col-md"> 	
+				<div class="form-group">
+					<label for="username-input">Nombre de usuario:</label>
+					<input type="text" class= "form-control" id="username-input" name="username" placeholder="Usuario" required>
+				</div>
+				<div class="form-group">
+					<label for="password-input">Contraseña:</label>
+					<input type="password" class= "form-control" id="password-input" name="password" placeholder="Contraseña" required >
+				</div>
+				<div class="form-group">
+					<label for="password2-input">Repetir contraseña:</label>
+					<input type="password" class= "form-control" id="password2-input" name="password2" required>
+				</div>
+			</div>
+		</fieldset>
+
+			<div class= "row">
+				<fieldset>
+				<legend><b>Datos personales obligatorios</b></legend>
+				<div class= "col-md">              
+					<div class="form-group">
+						<div style="float:left;">
+						<label for="firstname-input">Nombre:</label>
+						<input type="text" class= "form-control" id="firstname-input" name="firstName" required>
+					</div></div>
+					
+					<div class="form-group">
+						<div style="float:left;">
+						<label for="lastname-input">Apellidos:</label>
+						<input type="text" class= "form-control" id="lastname-input" name="lastName" required>
+					</div></div>
+					
+					<div class="form-group">
+						<div style="float:left;">
+						<label for="email-input">Email:</label>
+						<input type="email" class= "form-control" id="email-input" name="email" placeholder="ejemplo@gmail.com" required>
+					</div></div>
+					
+					<div class="form-group">
+						<div style="float:left;"></div>
+						<label>Fecha de nacimiento:</label>
+						<input type="date" max="2012-01-01" class="form-control" id="birthdate-input" name="birthdate" requiered>
+					</div>
+
+					<div class="form-group">
+						<div style="float:left;">
+						<label>Género</label>
+						<select name="select" required>
+							<option value="value1" selected>Por favor, elija una opción</option>
+							<option value="value2">Hombre</option>
+							<option value="value3">Mujer</option>
+							<option value="value3">Otro</option>
+						  </select>
+					</div></div>
+
+					<div class="form-group">
+						<div style="float:left;">
+						<label>Color de pelo</label>
+						<input type="color" required>
+					</div></div>
+					<div class="form-group">
+						<div style="float:left;">
+						<label>Color de ojos</label>
+						<input type="color" required>
+					</div></div>
+
+					<div class="form-group">
+						<div>
+						<label>Biografía:</label>
+						<div><textarea cols="40" rows="2" required></textarea></div>
+						</div>
+
+					</div>
+
+					<div class="form-group">
+						<div style="float:left;">
+						<label>Peso:</label>
+						<input type="number" placeholder="En kilos" required>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div style="float:left;">
+						<label>Altura:</label>
+						<input type="number" placeholder="En centímetros" required>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div style="float:left;">
+						<label>Municipio:</label>
+						<input type="text" placeholder="Ejemplo: Gines" required>
+					</div></div>
+
+					<div class="form-group">
+						<div style="float:left;">
+						<label>Provincia:</label>
+						<select name="Provincia" required>
+							<optgroup label="Andalucía">	
+								<option>Por favor, elija una opción</option>
+								<option>Sevilla</option>
+								<option>Málaga</option>
+								<option>Cádiz</option>
+								<option>Granada</option>
+								<option>Jaén</option>
+							</optgroup> </select>
+					</div></div>
+
+					<div class="form-group">
+						<div style="float:left;">
+						<label>Dirección:</label>
+						<input type="text" placeholder="Calle/plaza, piso, número, etc" required>
+					</div></div>
+
+					<div class="form-group">
+						<div style="float:left;">
+						<label>Codigo postal:</label>
+						<input type="number" max="100000" placeholder="No más de 5 números" required>
+						</div>
+					</div>
+
+				</div>
+				</fieldset>
+				
+							 
+			</div> 					 
+			
+			<div class= "row">
+				<div class="col-md text-center mb-2">
+					<button type= "button" class= "btn btn-danger" onclick="window.location.href=`index.html`">
+						<i class="fa fa-home"></i>Cancelar
+					</button>
+					<button type= "submit" class= "btn btn-primary">
+						<i class="fa fa-user-plus"></i>Registrarse
+					</button>
+				</div>
+				
+			</div>
+		</form>	
+	</div>
+	<div id="page-footer"></div> <!-- Incrustar aquí pie común footer.html con JavaScript -->
+	<script>include ("footer.html", "#page-footer");</script>
+	<script src= "js/header.js" type= "module"> </script> <!-- 7.1 Añadido para controlar la cabecera -->
+	<script src="js/register.js" type="module"></script> <!-- Gestión del formulario -->	
+	</body>
+</html>

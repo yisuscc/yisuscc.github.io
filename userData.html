@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src= "/js/utils/include.js"> </script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "/css/bootstrap.min.css">
+    <link rel="stylesheet" href= "/css/style.css">
+	<link rel="stylesheet " href= "/css/font-awesome.min.css">
+    <title>Datos del Usuario</title>
+    <script src="/js/libs/jquery-3.4.1.min.js"> </script>
+	<script src="/js/libs/popper.min.js"> </script>
+	<script src="/js/libs/bootstrap.min.js"> </script>
+	<script src= "js/libs/axios.min.js"></script> <!-- Librería Axios para peticiones Ajax a la API Rest -->
+</head>
+<body>
+    
+    <div id="page-header"></div> <!-- Incrustar aquí cabecera común header.html con JavaScript -->
+	<script>include ("header.html", "#page-header");</script>
+    <h1 class="text-center"> Tus datos </h1>
+    <div> <button class="btn-warning ">Editar</button> </div>
+
+    <form > <div class="col-md">
+            <div >
+            <label for="firstname-input">Nombre:</label>
+            <input type="text" class= "form-control" id="firstname-input" name="firstName" placeholder="juanito" readonly required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div >
+        <label for="lastname-input">Apellidos:</label>
+        <input type="text" class= "form-control" id="lastname-input" name="lastName" placeholder="Menganito" readonly required>
+    </div></div>
+        <div class="form-group">
+            <label for="username-input">Nombre de usuario:</label>
+            <input type="text" class= "form-control" id="username-input" name="username" placeholder="Juanito" required readonly>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Correo electronico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" readonly>
+          </div>
+        </div>
+        <div class="form-group">
+            <div ></div>
+            <label>Fecha de nacimiento:</label>
+            <input type="date" max="2012-01-01" class="form-control" id="birthdate-input" name="birthdate" placeholder="2001-10-30" readonlyrequired>
+        </div>
+        <div class="form-group">
+            <div >
+            <label>Género</label>
+            <select name="select" disabled required>
+               
+                <option value="value2" selected>Hombre</option>
+                <option value="value3">Mujer</option>
+                <option value="value3">Otro</option>
+              </select>
+        </div></div>
+        <div class="form-group">
+            <div >
+            <label>Color de pelo</label>
+            <input type="text"   placeholder="Castaño" readonly required>
+        </div></div>
+        <div class="form-group">
+            <div>
+            <label>Color de ojos</label>
+            <input type="text"  placeholder="Castaño" readonly required>
+        </div></div>
+        <div class="form-group">
+            <div>
+            <label>Peso:</label>
+            <input type="number" placeholder="90" readonly required>
+            </div>
+        </div>
+
+        
+					<div class="form-group">
+						<div >
+						<label>Altura:</label>
+						<input type="number" placeholder="150" readonly required>
+						</div>
+					</div>
+					<div class="form-group">
+						<div >
+						<label>Municipio:</label>
+						<input type="text" placeholder=" Gines" readonly required>
+					</div></div>
+                    <div class="form-group">
+						<div >
+						<label>Provincia:</label>
+						<select name="Provincia" required disabled>
+							<optgroup label="Andalucía">	
+								
+								<option>Sevilla</option>
+								<option>Málaga</option>
+								<option>Cádiz</option>
+								<option>Granada</option>
+								<option selected >Jaén</option>
+							</optgroup> </select>
+					</div></div>
+
+                    <div class="form-group">
+						<div >
+						<label>Dirección:</label>
+						<input type="text" placeholder="Avenida reina mercedes,3" required readonly >
+					</div></div>
+                    <div class="form-group">
+						<div >
+						<label>Codigo postal:</label>
+						<input type="number" max="100000" placeholder="41005" readonly required>
+						</div>
+					</div>
+    </form>
+
+    <div class="btn-group" role="group" >
+        <button class="btn btn-success"> Actualizar</button>
+        <button></button>
+    </div>
+<div>
+    <h3 class="col-md text-left"> Borrar cuenta:  </h3><button class="btn btn-danger"> Borrar</button>
+</div>
+    <div id="page-footer"></div> <!-- Incrustar aquí pie común footer.html con JavaScript -->
+	<script>include ("footer.html", "#page-footer");</script>
+</body>
+</html>

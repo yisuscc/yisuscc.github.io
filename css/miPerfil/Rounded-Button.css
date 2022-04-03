@@ -1,0 +1,15 @@
+.add {
+  background: #45bfc2;
+  padding: 15px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius: 300px;
+  display: block;
+  margin: auto;
+  margin-top: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: auto;
+}
+

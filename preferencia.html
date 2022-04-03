@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Ficha de Preferencias</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/css/fichaPreferencias.css">
+</head>
+
+<body style="background: #dddbd1;">
+    <div id="page-header"></div>
+    <script> include("header.html", "#page-header");</script>
+    <div class="container-fluid"></div>
+    <div class="container">
+        <div>
+            <form>
+                <div class="form-group mb-3" style="margin-top: 15px;">
+                    <div id="formdiv" style="background: #ffffff;">
+                        <div class="row2">
+                            <div class="col-md-8 offset-md-1">
+                                <p class="casillas"><strong>Edad Mínima</strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input class="form-control" type="text" style="margin-left:0px;font-family:Roboto, sans-serif;" name="Edad mínima" placeholder="Edad mínima"></div>
+                        </div>
+                        <div class="row2">
+                            <div class="col-md-8 offset-md-1">
+                                <p class="casillas"><strong>Edad Máxima</strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input class="form-control" type="text" style="margin-left:0px;font-family:Roboto, sans-serif;" name="Edad máxima" placeholder="Edad máxima"></div>
+                        </div>
+                        <div class="row2">
+                            <div class="col-md-8 offset-md-1">
+                                <p class="casillas"><strong>Estatura Mínima</strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input class="form-control" type="text" style="margin-left:0px;font-family:Roboto, sans-serif;" name="Estatura mínima" placeholder="Estatura mínima"></div>
+                        </div>
+                        <div class="row2">
+                            <div class="col-md-8 offset-md-1">
+                                <p class="casillas"><strong>Estatura Máxima</strong><br></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input class="form-control" type="text" style="margin-left:0px;font-family:Roboto, sans-serif;" name="Estatura máxima" placeholder="Estatura máxima"></div>
+                        </div>
+                        <div class="row2">
+                            <div class="col-md-8 offset-md-1">
+                                <p class="casillas"><strong>Peso Mínimo</strong><br></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input class="form-control" type="text" style="margin-left:0px;font-family:Roboto, sans-serif;" name="Peso mínimo" placeholder="Peso mínimo"></div>
+                        </div>
+                        <div class="row2">
+                            <div class="col-md-8 offset-md-1">
+                                <p class="casillas"><strong>Peso Máximo</strong><br></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input class="form-control" type="text" style="margin-left:0px;font-family:Roboto, sans-serif;" name="Peso máximo" placeholder="Peso máximo"></div>
+                        </div>
+                        <div class="row2">
+                            <div class="col-md-8 offset-md-1">
+                                <p class="casillas"><strong>Género</strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><select class="form-select" style="font-family:Roboto, sans-serif;" name="género">
+                                    <optgroup label="Género">
+                                        <option value="">Masculino</option>
+                                        <option value="">Femenino</option>
+                                    </optgroup>
+                                </select></div>
+                        </div>
+                        <div class="row2">
+                            <div class="col-md-8 offset-md-1">
+                                <p class="casillas"><strong>Color de Ojos</strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><select class="form-select" style="font-family:Roboto, sans-serif;" name="Color de ojos">
+                                    <optgroup label="Color de ojos">
+                                        <option value="">Marrón Oscuro</option>
+                                        <option value="">Marrón Claro</option>
+                                        <option value="">Rubio</option>
+                                        <option value="">Negro</option>
+                                        <option value="">Gris</option>
+                                        <option value="">Blanco</option>
+                                        <option value="">Pelirrojo</option>
+                                        <option value="">Otro</option>
+                                    </optgroup>
+                                </select></div>
+                        </div>
+                        <div class="row2">
+                            <div class="col-md-8 offset-md-1">
+                                <p class="casillas"><strong>Color de Pelo</strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><select class="form-select" style="font-family:Roboto, sans-serif;" name="Color de pelo">
+                                    <optgroup label="Color de pelo">
+                                        <option value="">Marrón Oscuro</option>
+                                        <option value="">Marrón Claro</option>
+                                        <option value="">Rubio</option>
+                                        <option value="">Negro</option>
+                                        <option value="">Gris</option>
+                                        <option value="">Blanco</option>
+                                        <option value="">Pelirrojo</option>
+                                        <option value="">Otro</option>
+                                    </optgroup>
+                                </select></div>
+                        </div>
+                        <div class="row2">
+                            <div class="col-md-8 offset-md-1">
+                                <p class="casillas"><strong>Provincia</strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input class="form-control" type="text" style="margin-left:0px;font-family:Roboto, sans-serif;" placeholder="Provincia"></div>
+                        </div>
+                        <div class="row2">
+                            <div class="col-md-8 offset-md-1">
+                                <p class="casillas"><strong>Municipio</strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input class="form-control" type="text" style="margin-left:0px;font-family:Roboto, sans-serif;" placeholder="Municipio"></div>
+                        </div>
+                        <div class="row2">
+                            <div class="col-md-8 offset-md-1">
+                                <p class="casillas"><strong>Código Postal</strong></p>
+                            </div>
+                            <div class="col-md-10 offset-md-1"><input class="form-control" type="text" style="margin-left:0px;font-family:Roboto, sans-serif;" placeholder="Código Postal"></div>
+                        </div>
+                        <div class="row2">
+                            <div class="col-12 col-md-4 offset-md-4" style="width: 184px;padding: 0px;margin-left: auto;margin-right: auto;margin-bottom:15px"><button class="btn btn-light btn-lg" style="font-family: Roboto, sans-serif;margin-right: 3px;" type="reset">Clear </button><button class="btn btn-light btn-lg" style="margin-left: 3px;" type="submit">Submit </button></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+       
+    </div>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <div id="page-footer"></div> 
+    <script>include ("footer.html", "#page-footer");</script>
+</body>
+
+</html>
